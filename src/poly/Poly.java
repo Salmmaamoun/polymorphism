@@ -40,11 +40,9 @@ public class Poly {
     }
 
     public static void print(Animal a) {
-        if (a instanceof Dog) {
-            a.makeNoise();
-            ((Dog) a).grow();
-        } else {
-            a.makeNoise();
+         a.makeNoise();
+        if (a instanceof Dog d) {
+            d.grow();
         }
 
     }
